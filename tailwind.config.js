@@ -2,7 +2,16 @@
 module.exports = {
   content:["./*.html"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('BG.png')",
+        
+       },
+      fontFamily:{
+        'body' : [' "Cormorant Upright", serif '],
+        ade : ['Roboto']
+      }
+    },
   },
   plugins: [],
 }
