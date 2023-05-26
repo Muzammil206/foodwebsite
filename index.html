@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
+    <script defer src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="home bg-[#0C0B08] h-auto">
+        <div class="icon lg:hidden sm:block absolute top-1 left-1"><img src="icons8-menu-64.png" alt=""></div>
         <nav class="flex flex-row">
             <div class="header w-screen h-32 ">
                 <h1 class="font-body h-14 ml-32 mt-8 text-2xl w-48 text-white uppercase font-bold align-middle ">Gerícht</h1>
@@ -41,7 +43,7 @@
         </div>
         
         
-        <div class=" hidden bg-[#0C0B08] sm:hidden "   >
+        <div class=" mobileNav hidden bg-[#0C0B08] sm:hidden  "   >
             <div class="space-y-1 ">
            
             <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
@@ -189,7 +191,7 @@
             <img src="Group 87.png" alt="" class="absolute w-36 h-36 top-8 left-8 hidden lg:block ">
             <img src="Group 87.png" alt="" class="absolute left-44 w-14  lg:hidden ">
             <div class="flex flex-col lg:flex-row  lg:w-9/12 lg:left-40  h-4/5 m-auto  w-full align-middle justify-center top-[10%] content-center absolute  ">
-             <div class="award lg:w-3/5 h-full w-full p-14">
+             <div class="award lg:w-3/5 h-full w-full p-14 ">
                     <p class=" font-body font-bold text-sm text-white h-7 ">Awards & recognition</p>
                     <h1 class="text-[#DCCA87] text-5xl font-body h-">Our Laurels</h1>
                     <div class="flex lg:flex-row flex-col gap-4">
@@ -225,6 +227,42 @@
                     <img src="img.png" alt="" class="w-full pb-4">
                 </div>
             </div>
+
+
+        </section>
+        <section>
+            <div class="bg-black py-10">
+                <div class="container mx-auto px-4">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <!-- Replace the image URLs and captions with your own -->
+                    <div class="bg-black rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                      <img src="https://plus.unsplash.com/premium_photo-1663852297801-d277b7af6594?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Food Image 1" class="w-full h-auto">
+                      <div class="p-4  text-[#DCCA87] text-center">
+                        <h3 class="text-xl font-body font-bold mb-2">Tantalizing Sushi Rolls</h3>
+                        <p class="text-sm">Made with the freshest ingredients</p>
+                      </div>
+                    </div>
+                    <div class="bg-black rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Food Image 2" class="w-full h-auto">
+                      <div class="p-4 bg-gradient-to-b font-body from-transparent to-black text-[#DCCA87] text-center">
+                        <h3 class="text-xl font-bold mb-2">Colorful and Vibrant Fruit Salad</h3>
+                        <p class="text-sm">Bursting with flavors</p>
+                      </div>
+                    </div>
+                    <div class="bg-black rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80" alt="Food Image 3" class="w-full h-auto">
+                      <div class="p-4 bg-gradient-to-b from-transparent to-black text-[#DCCA87] text-center">
+                        <h3 class="text-xl font-body font-bold mb-2">Freshly Baked Artisanal Bread</h3>
+                        <p class="text-sm">Perfect for any occasion</p>
+                      </div>
+                    </div>
+                    <!-- Add more image items as needed -->
+                  </div>
+                </div>
+              </div>
+              
+              
+              
         </section>
         <footer class="bg-hero-pattern relative bg-cover bg-center h-screen lg:h-screen w-screen ">
           <div class="contact absolute rounded shadow-gray-500 align-middle bg-[#0C0C0C] w-full lg:left-1/4 lg:w-1/2 h-1/2 px-11 py-6 content-center justify-center">
@@ -238,6 +276,23 @@
           </div>
           <div class="footer"></div>
         </footer>
+        <footer class="bg-gray-800 py-6">
+            <div class="container mx-auto px-4">
+              <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="text-[#DCCA87] text-center md:text-left mb-4 md:mb-0">
+                  <h3 class="text-xl font-bold">Food Recipe Website</h3>
+                  <p class="text-sm">Delicious recipes at your fingertips</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <a href="#" class="text-[#DCCA87] hover:text-gray-400">Home</a>
+                  <a href="#" class="text-[#DCCA87] hover:text-gray-400">Recipes</a>
+                  <a href="#" class="text-[#DCCA87] hover:text-gray-400">About</a>
+                  <a href="#" class="text-[#DCCA87] hover:text-gray-400">Contact</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+          
     </div>
 </body>
 </html>
